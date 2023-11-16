@@ -1,0 +1,47 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 30px;
+    padding: 10px;
+}
+/* Групповое селекторы */
+h1,
+h2,
+span {
+    color: red;
+}
+/* Селектор потомок */
+div p {
+    color: green;
+}
+div p span {
+    color: blue;
+}
+ul li > span {
+    font-weight: bold;
+}
+
+ul li + li {
+    color: aqua;
+}
+
+br ~ p {
+    font-size: 30px;
+}
+a[target] {
+    background-color: greenyellow;
+}
+a[target="_blank"] {
+    background-color: orange;
+}
+a[href^="http://123"] {
+    background-color: bisque;
+}
+a[href$=".jpg"] {
+    background-color: lightcoral;
+}
+a[href*="/test/"] {
+    background-color: darkseagreen;
+}
